@@ -3,9 +3,11 @@ import Nav from "../nav/Nav";
 import Navwork from "../nav/Navwork";
 
 
+
 const MainOutlet = () => {
     return (
         <div>
+
             <Navwork></Navwork>
             <Nav></Nav>
           <Outlet></Outlet>  

@@ -10,10 +10,9 @@ const Cardpart = () => {
        <div className="text-center mb-16">
          <p>price</p>
          <p>title</p>
-            {/* create  a router path */}
        <Link to={`/`}> <button className="btn btn-warning mb-4 w-44">book</button></Link>
-  </div>
-</div>
+       </div>
+        </div>
         </div>
         </div>
     );
