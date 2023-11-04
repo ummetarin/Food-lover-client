@@ -4,26 +4,28 @@ const Section3 = () => {
     return (
         <div>
             <div className="mt-24 font-bold  ">
-    <h1 className="text-7xl text-center mb-12">Gallery section</h1>
+    <h1 className="text-5xl  text-center text-yellow-950 mb-12"> Restaurant Chef</h1>
+    <p className="text-3xl text-center text-lime-950 mb-3">A  Restaurant worker is an essential part of the team responsible for ensuring a positive dining experience for guests. Their duties may vary depending on their specific role, but in general, they are responsible for the following tasks</p>
+    <img className="w-52 flex items-center mx-auto mb-24" src="https://i.ibb.co/WKFVMph/res-removebg-preview.png" alt="" />
 
  <div className="flex md:flex-row flex-col gap-12 justify-center md:ml-1 ml-44">
  <div className="card">
   <div className="card-inner">
     <div className="card-front">
-     <img src="/car-doctor-resources/assets/images/banner/4.jpg" alt="" />
+     <img src="https://i.ibb.co/QpxmZYq/wr-1.jpg" alt="" />
     </div>
     <div className="card-back">
-      <p>Worker</p>
+      <p>Tharsms Wave</p>
     </div>
   </div>
 </div>
 <div className="card">
   <div className="card-inner">
     <div className="card-front">
-     <img src="/car-doctor-resources/assets/images/banner/5.jpg" alt="" />
+     <img src="https://i.ibb.co/kh5qDgb/wr-2.jpg" alt="" />
     </div>
     <div className="card-back">
-      <p>Worker</p>
+      <p>RiloySha</p>
     </div>
   </div>
 </div>
@@ -33,30 +35,30 @@ const Section3 = () => {
  <div className="card">
   <div className="card-inner">
     <div className="card-front">
-     <img src="/car-doctor-resources/assets/images/banner/1.jpg" alt="" />
+     <img src="https://i.ibb.co/BK5vpqg/wr-3.jpg" alt="" />
     </div>
     <div className="card-back">
-      <p>Worker</p>
+      <p>Huiper Sho</p>
     </div>
   </div>
 </div>
 <div className="card">
   <div className="card-inner">
     <div className="card-front">
-     <img src="/car-doctor-resources/assets/images/banner/2.jpg" alt="" />
+     <img src="https://i.ibb.co/NYW6HGd/wr-4.jpg" alt="" />
     </div>
     <div className="card-back">
-      <p>Worker</p>
+      <p>DidoyRaw</p>
     </div>
   </div>
 </div>
 <div className="card">
   <div className="card-inner">
     <div className="card-front">
-     <img src="/car-doctor-resources/assets/images/banner/3.jpg" alt="" />
+     <img src="https://i.ibb.co/XXRRL67/wr-5.jpg" alt="" />
     </div>
     <div className="card-back">
-      <p>Worker</p>
+      <p>ShildrathHosha</p>
     </div>
   </div>
 </div>
@@ -65,20 +67,20 @@ const Section3 = () => {
  <div className="card">
   <div className="card-inner">
     <div className="card-front">
-     <img src="/car-doctor-resources/assets/images/banner/6.jpg" alt="" />
+     <img src="https://i.ibb.co/sR9nS3s/w-6.jpg" alt="" />
     </div>
     <div className="card-back">
-      <p>Worker</p>
+      <p>Jonns Jub</p>
     </div>
   </div>
 </div>
 <div className="card">
   <div className="card-inner">
     <div className="card-front">
-     <img src="/car-doctor-resources/assets/images/banner/5.jpg" alt="" />
+     <img src="https://i.ibb.co/gT5Njb4/wr-7.jpg" alt="" />
     </div>
     <div className="card-back">
-      <p>Worker</p>
+      <p>Racel Mans</p>
     </div>
   </div>
 </div>
