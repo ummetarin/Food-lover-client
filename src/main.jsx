@@ -5,11 +5,13 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './Home/Home'
 import MainOutlet from './MainOutlet/MainOutlet'
 import Blog from './Blog/Blog'
+import Error from './Error/Error'
 
 const router=createBrowserRouter([
   {
     path:"/",
     element:<MainOutlet></MainOutlet>,
+    errorElement:<Error></Error>,
     children:[{
       path:"/",
       element:<Home></Home>
