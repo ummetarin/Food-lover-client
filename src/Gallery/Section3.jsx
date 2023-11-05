@@ -4,10 +4,12 @@ const Section3 = () => {
     return (
         <div>
             <div className="mt-24 font-bold  ">
-    <h1 className="text-5xl  text-center text-yellow-950 mb-12"> Restaurant Chef</h1>
-    <p className="text-3xl text-center text-lime-950 mb-3">A  Restaurant worker is an essential part of the team responsible for ensuring a positive dining experience for guests. Their duties may vary depending on their specific role, but in general, they are responsible for the following tasks</p>
-    <img className="w-52 flex items-center mx-auto mb-24" src="https://i.ibb.co/WKFVMph/res-removebg-preview.png" alt="" />
+            <img className="w-52 flex items-center mx-auto mb-8" src="https://i.ibb.co/WKFVMph/res-removebg-preview.png" alt="" />
 
+    <h1 className="text-5xl  text-center text-yellow-950 mb-8">  RESTAURANT CHEF</h1>
+    <p className="text-3xl px-24 text-center text-lime-950 mb-4">A  Restaurant worker is an essential part of the team responsible for ensuring a positive dining experience for guests. Their duties may vary depending on their specific role, but in general, they are responsible for the following tasks</p>
+    <img className='h-20 mb-36 flex mx-auto' src="https://i.ibb.co/q0q0Tqt/rate.png " alt="" />
+    
  <div className="flex md:flex-row flex-col gap-12 justify-center md:ml-1 ml-44">
  <div className="card">
   <div className="card-inner">
