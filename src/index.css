@@ -9,7 +9,7 @@
   justify-content: center;
 }
 .scene {
-  width: 260px;
+  width: 600px;
   height: 200px;
   perspective: 1000px;
   position: relative;
@@ -24,10 +24,10 @@
 }
 .carousel__cell {
   position: absolute;
-  width: 240px;
-  left: 10px;
-  height: 200px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 300px;
+  left: 5px;
+  height: 350px;
+  border: 1px solid rgba(254, 252, 252, 0.3);
 }
 
 /* slide */

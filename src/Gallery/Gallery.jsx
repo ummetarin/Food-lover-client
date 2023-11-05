@@ -34,12 +34,12 @@ const Gallery = () => {
         <div className="wrapper">
       <div className="scene">
         <div className="carousel keen-slider" ref={sliderRef}>
-          <div className="carousel__cell number-slide1 ">1</div>
-          <div className="carousel__cell number-slide2">2</div>
-          <div className="carousel__cell number-slide3">3</div>
-          <div className="carousel__cell number-slide4">4</div>
-          <div className="carousel__cell number-slide5">5</div>
-          <div className="carousel__cell number-slide6">6</div>
+          <div className="carousel__cell number-slide1 "><img className="h-full w-full" src="https://i.ibb.co/sKfKGyf/img7.jpg" alt="" /></div>
+          <div className="carousel__cell number-slide2"><img className="h-full w-full" src="https://i.ibb.co/dbdD7WX/mg5.jpg" alt="" /></div>
+          <div className="carousel__cell number-slide3"><img className="h-full w-full" src="https://i.ibb.co/4NK84XQ/img4.jpg" alt="" /></div>
+          <div className="carousel__cell number-slide4"><img className="h-full w-full" src="https://i.ibb.co/XkkMRKN/img3.jpg" alt="" /></div>
+          <div className="carousel__cell number-slide5"><img className="h-full w-full" src="https://i.ibb.co/BjrCLRw/img2.jpg" alt="" /></div>
+          <div className="carousel__cell number-slide6"><img className="h-full w-full" src="https://i.ibb.co/XXRRL67/wr-5.jpg" alt="" /></div>
         </div>
       </div>
     </div>

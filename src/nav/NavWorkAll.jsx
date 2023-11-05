@@ -1,6 +1,6 @@
 
 
-const Navwork = () => {
+const NavWorkAll = () => {
     return (
         <div>
               <div className='w-full   bg-orange-100  ' >
@@ -16,7 +16,7 @@ const Navwork = () => {
            </div>
           </div>
           <div>
-            <h1 className="font-extrabold mt-8 text-3xl text-orange-600">RESTAURENT</h1>
+            <h1 className="font-extrabold mt-8 text-3xl text-orange-600">RESTAURENT All FOOD ITEMS</h1>
           </div>
         </div>
           
@@ -25,4 +25,4 @@ const Navwork = () => {
     );
 };
 
-export default Navwork;
+export default NavWorkAll;

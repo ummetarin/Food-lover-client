@@ -6,7 +6,7 @@ const TabSection = () => {
         <div className=''>
              <div className='flex md:flex-row flex-col justify-center gap-4'>
              <h1 className=' mt-16 mb-12 text-5xl text-center font-bold  text-lime-950'>RESTRURENT REVIEWS</h1>
-             <img className=' h-36 mt-6' src="https://i.ibb.co/ZBsRfYg/burger-removebg-preview.png" alt="" />           
+             <img className=' h-36 mt-6  md:mx-1 mx-auto' src="https://i.ibb.co/ZBsRfYg/burger-removebg-preview.png" alt="" />           
              </div>
         <p className='mb-12 px-24 text-center text-2xl font-bold t text-red-900'>Of course! I would be happy to help you with restaurant reviews. Please provide me with the name of the restaurant youre interested in, and if you have specific questions or aspects youd like me to cover in the review (e.g., food quality, service, ambiance), let me know. If youre looking for a general restaurant review template, heres one you can use as a starting point:</p>   
     <Tabs>

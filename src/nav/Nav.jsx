@@ -15,17 +15,17 @@ const Nav = () => {
          <div className=" md:flex-row flex-col  gap-10 text-md md:ml-[500px] text-orange-700  ">
     
          <Link to={'/'}>Home</Link>
-         <Link to={'/add'}>ALLFoodItems</Link>
+         <Link to={'/allfood'}>ALLFoodItems</Link>
          
         <Link to={'/res'}>Register</Link>
         <Link to={'/blog'}>Blog</Link>
-        <Link to={'/'}>MyProfile</Link>
+        <Link to={'/myP'}>MyProfile</Link>
 
   
   </div>
   <div className="navbar-end lg:mr-36 md:mr-36 mr-52 md:mt-1 mt-3 gap-4 ">
   {/* {user?.email ? <button onClick={handlelogout}>LogOut</button>:<button><Link to={'/log'}>Login</Link></button> } */}
-       <button className="btn bg-orange-500 font-bold">LOGIN</button>
+     <Link to={'/log'}>  <button className="btn bg-orange-500 font-bold">LOGIN</button></Link>
        <img className="rounded-lg" src="/car-doctor-resources/assets/icons/person.svg" alt="" />
   </div>
    </div>
