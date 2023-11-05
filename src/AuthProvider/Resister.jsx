@@ -5,8 +5,13 @@ import Navres from "./Navres";
 const Resister = () => {
     return (
         <div>
-            <Navres></Navres>
+          <Navres></Navres>
            <Nav></Nav> 
+
+           <div>
+
+            
+           </div>
         </div>
     );
 };

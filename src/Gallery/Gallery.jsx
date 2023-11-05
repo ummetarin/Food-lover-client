@@ -39,7 +39,7 @@ const Gallery = () => {
           <div className="carousel__cell number-slide3"><img className="h-full w-full" src="https://i.ibb.co/4NK84XQ/img4.jpg" alt="" /></div>
           <div className="carousel__cell number-slide4"><img className="h-full w-full" src="https://i.ibb.co/XkkMRKN/img3.jpg" alt="" /></div>
           <div className="carousel__cell number-slide5"><img className="h-full w-full" src="https://i.ibb.co/BjrCLRw/img2.jpg" alt="" /></div>
-          <div className="carousel__cell number-slide6"><img className="h-full w-full" src="https://i.ibb.co/XXRRL67/wr-5.jpg" alt="" /></div>
+          <div className="carousel__cell number-slide6"><img className="h-full w-full" src="https://i.ibb.co/YDRgrWz/card-1.jpg" alt="" /></div>
         </div>
       </div>
     </div>

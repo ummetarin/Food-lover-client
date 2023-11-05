@@ -1,0 +1,45 @@
+[
+    {
+      "FoodID": 1,
+      "FoodName": "Pizza Margherita",
+      "Image": "https://i.ibb.co/zJLndhc/pizza.jpg",
+      "Category": "Pizza",
+      "Price": 12.99
+    },
+    {
+      "FoodID": 2,
+      "FoodName": "Burger Deluxe",
+      "Image": "https://i.ibb.co/Qcw6KJ0/burget.jpg",
+      "Category": "Burger",
+      "Price": 8.49
+    },
+    {
+      "FoodID": 3,
+      "FoodName": "Spaghetti Carbonara",
+      "Image": "https://i.ibb.co/94FDmwH/span.jpg",
+      "Category": "Pasta",
+      "Price": 10.99
+    },
+    {
+      "FoodID": 4,
+      "FoodName": "Sushi Combo",
+      "Image": "https://i.ibb.co/Cz4rhxQ/sssss.jpg",
+      "Category": "Sushi",
+      "Price": 14.99
+    },
+    {
+      "FoodID": 5,
+      "FoodName": "Caesar Salad",
+      "Image": "https://i.ibb.co/n8B5cd6/bbbb.jpg",
+      "Category": "Salad",
+      "Price": 6.99
+    },
+    {
+      "FoodID": 6,
+      "FoodName": "Chocolate Cake",
+      "Image": "https://i.ibb.co/H7Cnk39/cake.jpg",
+      "Category": "Dessert",
+      "Price": 5.99
+    }
+  ]
+  
