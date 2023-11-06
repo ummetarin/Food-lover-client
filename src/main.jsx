@@ -25,7 +25,8 @@ const router=createBrowserRouter([
       element:<Blog></Blog>
     },{
       path:'/allfood',
-      element:<AllFood></AllFood>
+      element:<AllFood></AllFood>,
+      loader:()=>fetch('http://localhost:5000/count')
     },{
       path:'/res',
       element:<Resister></Resister>

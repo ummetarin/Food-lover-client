@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const AllFoodData = ({ services}) => {
     
-const{FoodName,Image,Price,Category,MadeBy,Origin,Quantity} = services||{};
+const{FoodName,FoodID,Image,Price,Category,MadeBy,Origin,Quantity} = services||{};
     return (
         <div>
         <div className="">
@@ -11,11 +11,9 @@ const{FoodName,Image,Price,Category,MadeBy,Origin,Quantity} = services||{};
     <figure className=""><img className="w-[300px] h-[200px] mx-auto" src={Image} alt="Shoes" /></figure>
    <div className="text-center mb-16 font-bold">
     <p className='mt-2 mb-2 text-red-800'>{FoodName}</p>
-    <p className=' mb-2 text-red-800'>Origin:{Origin}</p>
-    <p className='mt-2 mb-2 text-red-800'>Made by:{MadeBy}</p>
      <p className='mt-2 mb-2 text-red-800'>Price:{Price}</p>
      <p className='mt-2 mb-2 text-red-800'>Quantity:{Quantity}</p>
-     <p className='mt-2 mb-2 text-red-800'>Category:{Category}</p>
+     <p className='mt-2 mb-5 text-red-800'>Category:{Category}</p>
    <Link to={`/`}> <button className="btn  btn-neutral mb-4 w-44">Details</button></Link>
    </div>
     </div>

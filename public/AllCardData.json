@@ -437,5 +437,26 @@
         "Origin": "United States",
         "Description": "A hearty BBQ platter with ribs, pulled pork, and smoked sausage, served with coleslaw and cornbread.",
         "Quantity": 30
+    }, {
+        "FoodID": 41,
+        "FoodName": "Pretzels",
+        "Image": "https://i.ibb.co/yRhqJQk/superlatus-lead-adst-leungchopan.jpg",
+        "Category": "Snacks",
+        "Price": 2.99,
+        "MadeBy": "Twisted Snacks",
+        "Origin": "Germany",
+        "Description": "Crunchy pretzel twists, perfect for snacking with a hint of salt.",
+        "Quantity": 150
+    },
+    {
+        "FoodID": 42,
+        "FoodName": "Potato Chips",
+        "Image": "https://i.ibb.co/kxWsFZq/images-1.jpg",
+        "Category": "Snacks",
+        "Price": 2.49,
+        "MadeBy": "Crunchy Delights",
+        "Origin": "United States",
+        "Description": "Classic potato chips, thinly sliced and seasoned for a satisfying crunch.",
+        "Quantity": 200
     }
 ]
