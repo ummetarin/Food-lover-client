@@ -10,6 +10,7 @@ import AllFood from './AllFood/AllFood'
 import Resister from './AuthProvider/Resister'
 import Login from './AuthProvider/Login'
 import MyProf from './Myprofile/MyProf'
+import AuthProvider from './AuthProvider/AuthProvider'
 
 
 const router=createBrowserRouter([
@@ -47,6 +48,8 @@ const router=createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+  <AuthProvider>
+  <RouterProvider router={router}></RouterProvider>
+  </AuthProvider>
   </React.StrictMode>,
 )

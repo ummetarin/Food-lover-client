@@ -19,7 +19,15 @@ const Nav = () => {
          
         <Link to={'/res'}>Register</Link>
         <Link to={'/blog'}>Blog</Link>
-        <Link to={'/myP'}>MyProfile</Link>
+        {/* <Link to={'/myP'}>MyProfile</Link> */}
+        <div className="dropdown">
+       <label tabIndex={0} className=" m-1">MyProfile</label>
+       <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+       <li><a>My Added Food Items</a></li>
+       <li><a>Add a Food Items</a></li>
+       <li><a>Orderd Food Items</a></li>
+       </ul>
+       </div>
 
   
   </div>
