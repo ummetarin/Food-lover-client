@@ -5,12 +5,17 @@ import CardDta from "./CardDta";
 
 const Card = () => {
     const[services,setServices]=useState([]);
+    const [showAll, setShowAll] = useState(false);
 
     useEffect(()=>{
       fetch('http://localhost:5000/topfood')
       .then(res=>res.json())
       .then(data=>setServices(data))
     },[])
+
+    const toggleShowAll = () => {
+        setShowAll(!showAll);
+      };
 
     return (
         <div>
@@ -26,6 +31,17 @@ Feel free to use these titles and descriptions as inspiration for your own resta
             services.map(services=><CardDta key={services.FoodID} services={services}></CardDta>)
            }     
             </div> 
+
+            {services.length < 6 ? (
+        <div className="text-center mt-4">
+          <button
+            className="bg-blue-500 text-white px-4 py-2 rounded-md"
+            onClick={toggleShowAll}
+          >
+            See More
+          </button>
+        </div>
+      ) : null}
         </div>
         
     );

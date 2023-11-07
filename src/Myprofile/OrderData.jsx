@@ -90,6 +90,7 @@ const OrderData = () => {
         <th>Buyer</th>
         <th>Food Owner</th>
         <th>Delete</th>
+        <th>Purchase</th>
        
       </tr>
     </thead>

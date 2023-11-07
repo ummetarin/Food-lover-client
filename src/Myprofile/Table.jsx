@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Table = ({setOrd,handledlt}) => {
@@ -7,7 +8,7 @@ const Table = ({setOrd,handledlt}) => {
 
 
 
-    
+
     return (
         <tbody className="text-orange-800 font-bold md:text-xl">
         <tr>
@@ -37,6 +38,9 @@ const Table = ({setOrd,handledlt}) => {
         <button onClick={()=>handledlt(_id)} className="btn btn-circle">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6  text-red" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
          </button>
+        </th>
+        <th>
+        <Link to={'/orpage'}><button  className="custom-btn btn-2">Purchase</button></Link>
         </th>
       </tr>
       </tbody>

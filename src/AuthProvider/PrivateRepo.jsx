@@ -12,9 +12,14 @@ const PrivateRepo = ({children}) => {
 
     if(loading){
         return(
-         <div>
-            <span className="loading loading-ball loading-lg"></span>
-         </div>
+        
+        <div>
+            {/*  */}
+                  
+            <div className="loader">
+  <span></span>
+</div>
+        </div>
         )
     }
 
