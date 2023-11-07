@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import Nav from "../nav/Nav";
 import Table from "./Table";
+import Swal from "sweetalert2";
 
 
 const OrderData = () => {
@@ -10,7 +11,7 @@ const OrderData = () => {
 
   const [ord,setOrd]=useState([])
 
-   const url=`http://localhost:5000/orderdata?email=${user.email}`;
+   const url=`http://localhost:5000/orderdata?email=${user?.email}`;
    useEffect(()=>{
     fetch(url)
     .then(res=>res.json())
@@ -32,12 +33,12 @@ const OrderData = () => {
           })
           .then((result) => {
             if (result.isConfirmed) {
-            //   Swal.fire(
-            //     'Deleted!',
-            //     'Your file has been deleted.',
-            //     'success'
-            //   )
-            fetch(`https://dresscarddiscussion-89ugul42s-ummetrains-projects.vercel.app/dataforcard/${_id}`,{
+              Swal.fire(
+                'Deleted!',
+                'Your file has been deleted.',
+                'success'
+              )
+            fetch(``,{
                 method:"DELETE"
       
             })
@@ -45,8 +46,8 @@ const OrderData = () => {
             .then(data=>{
                 console.log(data);
                 if(data.deletedCount>0){
-                  const fil = set.filter(get => get._id != _id)
-                  dataSet(fil)
+                  const fil = ord.filter(get => get._id != _id)
+                  setOrd(fil)
       
                 Swal.fire(
                 'Deleted!',
@@ -91,7 +92,7 @@ const OrderData = () => {
     
       {/* row 1 */}
       {
-        ord.map(da=><Table key={da.FoodID} handledlt={handledlt}></Table>)
+        ord.map(da=><Table key={da.FoodID} setOrd={da} handledlt={handledlt}></Table>)
       }
       
     {/* foot */}
