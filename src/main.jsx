@@ -11,6 +11,7 @@ import Resister from './AuthProvider/Resister'
 import Login from './AuthProvider/Login'
 import MyProf from './Myprofile/MyProf'
 import AuthProvider from './AuthProvider/AuthProvider'
+import Details from './Details/Details'
 
 
 const router=createBrowserRouter([
@@ -37,6 +38,10 @@ const router=createBrowserRouter([
     },{
       path:"/myP",
       element:<MyProf></MyProf>,
+    },{
+     path:"/allresfood/:id",
+     element:<Details></Details>,
+     loader:({params})=>fetch(`http://localhost:5000/allresfood/${params.id}`)
     }]
   },
 

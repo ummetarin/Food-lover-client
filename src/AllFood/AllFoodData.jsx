@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 
 const AllFoodData = ({ services}) => {
@@ -14,7 +14,7 @@ const{FoodName,FoodID,Image,Price,Category,MadeBy,Origin,Quantity} = services||{
      <p className='mt-2 mb-2 text-red-800'>Price:{Price}</p>
      <p className='mt-2 mb-2 text-red-800'>Quantity:{Quantity}</p>
      <p className='mt-2 mb-5 text-red-800'>Category:{Category}</p>
-   <Link to={`/`}> <button className="btn  btn-neutral mb-4 w-44">Details</button></Link>
+   <Link to={`/allresfood/${FoodID}`}> <button className="btn  btn-neutral mb-4 w-44">Details</button></Link>
    </div>
     </div>
     </div>
