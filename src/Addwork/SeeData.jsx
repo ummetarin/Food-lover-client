@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const SeeData = ({setData}) => {
@@ -15,7 +16,7 @@ const SeeData = ({setData}) => {
      <p className='mt-2 mb-2 text-sky-950'>Quantity:{Quantity}</p>
      <p className='mt-2 mb-5 text-sky-950'>Category:{Category}</p>
      <p className='mt-2 mb-2 text-sky-950'>Origin:{Origin}</p>
-    <button className="btn bg-orange-700 text-white mt-5 mb-4 w-44">Purchase</button>
+ <Link to={`/update/${_id}`}><button className="btn bg-orange-700 text-white mt-5 mb-4 w-44">Update</button></Link>
    </div>
     </div>
     </div>

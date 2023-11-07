@@ -39,7 +39,7 @@ const OrderData = () => {
                 'Your file has been deleted.',
                 'success'
               )
-            fetch(``,{
+            fetch(`http://localhost:5000/orderdata/${_id}`,{
                 method:"DELETE"
       
             })

@@ -2,7 +2,12 @@
 
 const Table = ({setOrd,handledlt}) => {
     const {_id,Image,name,Price,Email,MadeBy}=setOrd||{}
+    
 
+
+
+
+    
     return (
         <tbody className="text-orange-800 font-bold md:text-xl">
         <tr>

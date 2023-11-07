@@ -4,8 +4,6 @@ const Navres = () => {
     return (
         <div>
         <div className='w-full   bg-orange-100  ' >
-    
-    
   <div className="md:justify-around justify-center flex md:flex-row flex-col">
   <div className='flex md:flex-row flex-col  '>
     <div>
