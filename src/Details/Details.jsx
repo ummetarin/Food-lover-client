@@ -1,10 +1,41 @@
-import { useLoaderData } from "react-router-dom";
+import { useContext, useState } from "react";
+import {  useLoaderData } from "react-router-dom";
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const Details = () => {
     const data=useLoaderData();
-    console.log(data);
+    const { user }=useContext(AuthContext);
+    console.log(user);
+    const OrderData={
+      Image:data.Image,
+      Price:data.Price,
+      name:data.FoodName,
+      MadeBy:data.MadeBy,
+      BuyerName:user?.name,
+      Origin:data.Origin,
+      FoodID:data.FoodID,
+      Email:user?.email,
+      Quantity:data.Quantity,
+    }
+   
   
-
+    let [orderd, setOrder] = useState([])
+  
+    const handleaddcard=()=>{
+      console.log(OrderData);
+      // orderd post data
+      fetch("http://localhost:5000/orderdata",{
+        method: 'POST',     
+        headers:{
+          'Content-Type': 'application/json',
+        } , 
+        body: JSON.stringify(OrderData),
+    
+      })
+      .then(response => response.json())
+      .then(data => setOrder(data.message))
+     }
+     console.log(orderd);
 
 
     return (
@@ -21,7 +52,7 @@ const Details = () => {
             <div className="card-actions lg:justify-end md:justify-center justify-start font-bold ">
            
             <div>
-            <button  className='bg-red-500  text-1xl rounded-md text-2xl text-white btn'>Add to cart</button>
+          <button onClick={handleaddcard} className='bg-red-500  text-1xl rounded-md text-2xl text-white btn'>Order</button>
            </div>
            
          

@@ -13,7 +13,7 @@ const Resister = () => {
    const handleresister=e=>{
       e.preventDefault();
    const form=e.target;
-   const name=form.Name.value;
+   const name=form.name.value;
    const email=form.email.value;
    const password=form.password.value;
    if (password.length <6 || /[A-Z]/.test(password) || /[!@#$%^&*()_+{}[\]:;<>,.?~\\]/.test(password)) {
@@ -51,7 +51,7 @@ const Resister = () => {
   <p className="title">Register</p>
   <form  onSubmit={handleresister} className="form  ">
     <input type="email" name="email" className="input" placeholder="Email" />
-    <input type="text" name="Name" className="input" placeholder="Name" />
+    <input type="text" name="name" className="input" placeholder="Name" />
     <input type="password" name="password" className="input" placeholder="Confirm password" />
       
     <div className="mt-10">

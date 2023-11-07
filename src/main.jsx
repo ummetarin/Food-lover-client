@@ -12,6 +12,8 @@ import Login from './AuthProvider/Login'
 import MyProf from './Myprofile/MyProf'
 import AuthProvider from './AuthProvider/AuthProvider'
 import Details from './Details/Details'
+import OrderData from './Myprofile/OrderData'
+import AddAFoodItems from './Myprofile/AddAFoodItems'
 
 
 const router=createBrowserRouter([
@@ -42,6 +44,12 @@ const router=createBrowserRouter([
      path:"/allresfood/:id",
      element:<Details></Details>,
      loader:({params})=>fetch(`http://localhost:5000/allresfood/${params.id}`)
+    },{
+      path:"/orpage",
+      element:<OrderData></OrderData>,
+    },{
+      path:"/addele",
+      element:<AddAFoodItems></AddAFoodItems>
     }]
   },
 

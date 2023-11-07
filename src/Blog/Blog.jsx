@@ -3,6 +3,7 @@ import 'react-tabs/style/react-tabs.css';
 import Nav from '../nav/Nav';
 import NavBlog from '../nav/NavBlog';
 
+
 const Blog = () => {
     return (
 
@@ -89,6 +90,7 @@ const Blog = () => {
    </div>
 </TabPanel>
 </Tabs>
+
    </div>
     );
 };

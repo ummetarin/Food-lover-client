@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "firebase": "^10.5.2",
+    "framer-motion": "^10.16.4",
     "keen-slider": "^6.8.6",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
