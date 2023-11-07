@@ -40,7 +40,7 @@ const Table = ({setOrd,handledlt}) => {
          </button>
         </th>
         <th>
-        <Link to={'/orpage'}><button  className="custom-btn btn-2">Purchase</button></Link>
+        <Link to={'/myparchasedata'}><button  className="custom-btn btn-2">Purchase</button></Link>
         </th>
       </tr>
       </tbody>

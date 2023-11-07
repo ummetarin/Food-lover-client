@@ -3,6 +3,7 @@ import Nav from "../nav/Nav";
 import Navres from "./Navres";
 import { useContext } from "react";
 import { AuthContext } from "./AuthProvider";
+import Swal from "sweetalert2";
 
 
 const Resister = () => {
@@ -16,17 +17,18 @@ const Resister = () => {
    const name=form.name.value;
    const email=form.email.value;
    const password=form.password.value;
+   const Image =form.Image.value;
    if (password.length <6 || /[A-Z]/.test(password) || /[!@#$%^&*()_+{}[\]:;<>,.?~\\]/.test(password)) {
-        //   Swal.fire({
-        //     icon: 'error',
-        //     title: 'Oops...',
-        //     text: 'Invalid password! Password should have less than 6 characters, no uppercase letters, and no special characters.',
-        //   });
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Invalid password! Password should have less than 6 characters, no uppercase letters, and no special characters.',
+          });
           return;
         }
-   console.log(name,email,password);
+   console.log(name,email,password,Image);
    
-   createUser(email,password)
+   createUser(email,password,name)
    .then(result=>{
     const user=result.user;
     console.log(user);
@@ -50,10 +52,16 @@ const Resister = () => {
     <div className="form-container   ">
   <p className="title">Register</p>
   <form  onSubmit={handleresister} className="form  ">
+    
     <input type="email" name="email" className="input" placeholder="Email" />
     <input type="text" name="name" className="input" placeholder="Name" />
     <input type="password" name="password" className="input" placeholder="Confirm password" />
-      
+    <div className="p-2 w-full ">
+<div className="relative ">
+ <label htmlFor="price" className="leading-7 text-sm text-gray-600">Image</label>
+ <input type="text" name='Image' placeholder="Image"  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"   />
+</div>
+</div>  
     <div className="mt-10">
   
 </div>

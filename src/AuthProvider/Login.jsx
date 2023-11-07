@@ -4,6 +4,7 @@ import Nav from "../nav/Nav";
 import NavLogin from "./NavLogin";
 import { AuthContext } from "./AuthProvider";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 
 
@@ -15,6 +16,14 @@ const Login = () => {
    const form=e.target;
    const email=form.email.value
    const password=form.password.value;
+   if (password.length <6 || /[A-Z]/.test(password) || /[!@#$%^&*()_+{}[\]:;<>,.?~\\]/.test(password)) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Invalid password! Password should have less than 6 characters, no uppercase letters, and no special characters.',
+    });
+    return;
+  }
    console.log(password,email);
    Signin(email,password)
    .then(res=>{
