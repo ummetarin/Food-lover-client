@@ -18,7 +18,7 @@ const Table = ({setOrd,handledlt}) => {
         <td>
           <div className="flex items-center space-x-3">
             <div className="avatar">
-              <div className="mask mask-squircle md:w-44 md:h-44 h-12 w-12 ">
+              <div className="mask mask-squircle md:w-36 md:h-36 h-12 w-12 ">
                 <img src={Image} alt="Avatar Tailwind CSS Component" />
               </div>
             </div>

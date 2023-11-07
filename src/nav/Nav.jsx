@@ -32,7 +32,7 @@ const Nav = () => {
         <div className="dropdown">
        <label tabIndex={0} className=" m-1">MyProfile</label>
        <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-       <Link><li><a>My Added Food Items</a></li></Link>
+       <Link to={'/seeadddata'}><li><a>My Added Food Items</a></li></Link>
        <Link to={'/addele'}> <li><a>Add a Food Items</a></li></Link>
        <Link to={'/orpage'}><li><a>Orderd Food Items</a></li></Link>
        </ul>

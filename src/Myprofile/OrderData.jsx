@@ -3,11 +3,12 @@ import { AuthContext } from "../AuthProvider/AuthProvider";
 import Nav from "../nav/Nav";
 import Table from "./Table";
 import Swal from "sweetalert2";
+import Navworkprofile from "../nav/Navworkprofile";
 
 
 const OrderData = () => {
    
-   const { user }=useContext(AuthContext)
+  const { user }=useContext(AuthContext)
 
   const [ord,setOrd]=useState([])
 
@@ -17,7 +18,7 @@ const OrderData = () => {
     .then(res=>res.json())
     .then(data=>setOrd(data))
    })
-   console.log(ord);
+  //  console.log(ord);
     
 
     const handledlt=_id=>{
@@ -67,6 +68,9 @@ const OrderData = () => {
     return (
       
         <div>
+          <div>
+            <Navworkprofile></Navworkprofile>
+          </div>
           <div >
             <Nav></Nav>
           </div>

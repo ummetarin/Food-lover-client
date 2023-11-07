@@ -37,7 +37,7 @@ import Navworkprofile from "../nav/Navworkprofile";
   
 
 
-    console.log(Order);
+    // console.log(Order);
 
 
     fetch('http://localhost:5000/adddata',{
