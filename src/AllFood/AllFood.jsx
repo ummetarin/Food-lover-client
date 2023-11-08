@@ -3,6 +3,7 @@ import Nav from "../nav/Nav";
 import NavWorkAll from "../nav/NavWorkAll";
 import AllFoodData from "./AllFoodData";
 import { useLoaderData } from "react-router-dom";
+import Section3 from "../Gallery/Section3";
 
 const AllFood = () => {
 
@@ -28,8 +29,12 @@ const AllFood = () => {
 
     return (
         <div>
+
             <NavWorkAll></NavWorkAll>
             <Nav></Nav>
+            <div>
+              <Section3></Section3>
+            </div>
 
           <div className="mt-16 mb-5 flex flex-col md:flex-row justify-center gap-8">
             <div>

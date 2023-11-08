@@ -3,12 +3,21 @@ import Gallery from "./Gallery";
 
 const Section2 = () => {
     return (
-        <div className="flex md:flex-row flex-col   md:justify-around justify-center">
-            <div className="md:mt-36 md:mb-72">
+        <div className="" >
+              <div className="md:mb-6 mb-24">
+              <div className="flex md:flex-row flex-col justify-center  mt-12 ">
+           <h1 className="text-5xl mt-12  text-center font-extrabold text-orange-600">Specialty of Our Restaurents</h1>
+           <img className="flex md:mx-1 mx-auto" src="https://i.ibb.co/FXNMKD2/bb-removebg-preview.png" alt="" />
+           </div>
+            <p className="text-2xl text-center px-14 text-amber-800">specialty restaurant means a retail establishment which primarily sells food of a single or limited variety, that may normally be consumed at, or soon after, the time of purchase irrespective of whether the establishment provides an area for on-site consumption.</p>
+              </div>
+
+          <div className="flex md:flex-row flex-col   md:justify-center gap-36 justify-center">
+          <div className="md:mt-36 md:mb-24">
                <Gallery></Gallery>
             </div>
-            <div className="md:mt-36 md:mb-72 mt-56"> 
-                <h1 className="text-5xl text-orange-700 text-center font-bold">Speciality in Our Food items</h1>
+            <div className="md:mt-36 md:mb-72 mt-36"> 
+                <h1 className="text-5xl text-orange-700 text-center font-bold md:mt-1 mt-44 ">Some Of Sprciality:</h1>
                <ul className="text-3xl text-green-950 text-center font-bold mt-8">
                   
                <h1> 1...Healty And Hygenic</h1>
@@ -23,6 +32,7 @@ const Section2 = () => {
                </div>
                </ul>
             </div>
+          </div>
 
 
         </div>

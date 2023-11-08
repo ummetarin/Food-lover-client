@@ -1,6 +1,8 @@
 
 
 const Section3 = () => {
+
+  
     return (
         <div>
             <div className="mt-24 font-bold  ">
