@@ -14,7 +14,6 @@ const PrivateRepo = ({children}) => {
         return(
         
         <div>
-            {/*  */}
                   
             <div className="loader">
   <span></span>

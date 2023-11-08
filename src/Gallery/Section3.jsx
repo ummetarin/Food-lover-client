@@ -2,10 +2,10 @@
 
 const Section3 = () => {
 
-  
+
     return (
         <div>
-            <div className="mt-24 font-bold  ">
+            <div className=" font-bold  ">
             <img className="w-52 flex items-center mx-auto mb-8" src="https://i.ibb.co/WKFVMph/res-removebg-preview.png" alt="" />
 
     <h1 className="text-5xl  text-center text-yellow-950 mb-8">  RESTAURANT CHEF</h1>

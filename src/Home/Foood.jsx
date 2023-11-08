@@ -11,6 +11,16 @@ const Foood = () => {
         </div>
         <div>
         <a href="" target="_blank">
+           <img src="https://i.ibb.co/1TDNB6r/food1-removebg-preview.png" className="logo react" alt="React logo" />
+         </a>
+        </div>
+        <div>
+        <a href="" target="_blank">
+           <img src="https://i.ibb.co/1TDNB6r/food1-removebg-preview.png" className="logo react" alt="React logo" />
+         </a>
+        </div>
+        <div>
+        <a href="" target="_blank">
            <img src="https://i.ibb.co/ZBsRfYg/burger-removebg-preview.png" className="logo react" alt="React logo" />
          </a>
         </div>

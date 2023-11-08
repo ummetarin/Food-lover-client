@@ -3,7 +3,7 @@ import Nav from "../nav/Nav";
 import NavWorkAll from "../nav/NavWorkAll";
 import AllFoodData from "./AllFoodData";
 import { useLoaderData } from "react-router-dom";
-import Section3 from "../Gallery/Section3";
+import Foood from "../Home/Foood";
 
 const AllFood = () => {
 
@@ -32,11 +32,11 @@ const AllFood = () => {
 
             <NavWorkAll></NavWorkAll>
             <Nav></Nav>
-            <div>
-              <Section3></Section3>
+            <div className="mt-36 ">
+              <Foood></Foood>
             </div>
 
-          <div className="mt-16 mb-5 flex flex-col md:flex-row justify-center gap-8">
+          <div className="mt-4 mb-5 flex flex-col md:flex-row justify-center gap-8">
             <div>
                 <h1 className="text-xl font-bold text-orange-700 mt-3">Search Your Food:</h1>
             </div>
