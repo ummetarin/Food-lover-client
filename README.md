@@ -8,8 +8,8 @@
 
 Currently, two official plugins are available:
 
-- [@vitejs/plugin-react-clientside](https://github.com/Porgramming-Hero-web-course/b8a11-client-side-ummetarin) uses [Babel](https://github.com/Porgramming-Hero-web-course/b8a11-client-side-ummetarin) for Fast Refresh
-- [@vitejs/plugin-react-Serverside](https://github.com/Porgramming-Hero-web-course/b8a11-server-side-ummetarin) uses [SWC](https://github.com/Porgramming-Hero-web-course/b8a11-server-side-ummetarin) for Fast Refresh
+- [clientside](https://github.com/Porgramming-Hero-web-course/b8a11-client-side-ummetarin) [https://github.com/Porgramming-Hero-web-course/b8a11-client-side-ummetarin]
+- [Serverside](https://github.com/Porgramming-Hero-web-course/b8a11-server-side-ummetarin) [https://github.com/Porgramming-Hero-web-course/b8a11-server-side-ummetarin] 
 
-- [@vitejs/plugin-react-Livelink](https://github.com/Porgramming-Hero-web-course/b8a11-client-side-ummetarin) uses [Babel](https://github.com/Porgramming-Hero-web-course/b8a11-client-side-ummetarin) for Fast Refresh
+- [Livelink](https://github.com/Porgramming-Hero-web-course/b8a11-client-side-ummetarin) [https://github.com/Porgramming-Hero-web-course/b8a11-client-side-ummetarin] 
 
