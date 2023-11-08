@@ -35,7 +35,7 @@ Feel free to use these titles and descriptions as inspiration for your own resta
             {services.length < 6 ? (
         <div className="text-center mt-4">
           <button
-            className="bg-blue-500 text-white px-4 py-2 rounded-md"
+            className="bg-orange-600 text-white px-4 py-2 rounded-md"
             onClick={toggleShowAll}
           >
             See More
