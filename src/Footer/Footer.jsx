@@ -1,6 +1,10 @@
+import { useContext } from "react";
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 
 const Footer = () => {
+        const {user}=useContext(AuthContext)
+        console.log(user);
     return (
         <div className="mt-44 font-bold">
             <footer className="footer p-10 bg-base-200 text-base-content">
@@ -36,6 +40,7 @@ const Footer = () => {
     <div>
           <h1 className="text-xl text-red-950 md:mb-6">Address:Chittagong,Khilgao city,Beside the EMC Road</h1>
          <u > <a href="">Contract us with Facebook,Instragram,Whatsapp</a></u>
+          <h1>Email of user:{user?.email}</h1>
          <img className="h-36 md:mt-8 w-36 " src="https://i.ibb.co/n74WGBn/loggggg.jpg" alt="" />
     </div>
 </div>
