@@ -42,13 +42,14 @@ const Nav = () => {
   </div>
   <div className="navbar-end lg:mr-36 md:mr-36 mr-52 md:mt-1 mt-7 gap-4 ">
    {
-    user?.email ? <button onClick={handllogout} className="btn bg-orange-500 font-bold">LogOut</button> && <img src={user?.photoURL}></img>
+    user?<div className='flex md:flex-row flex-col'> <button onClick={handllogout} className="btn bg-orange-500 font-bold">LogOut</button> 
+    <img className='rounded-full h-12 w-12 md:ml-1 ml-7 md:mt-0 mt-6 ' src={user?.photoURL}></img></div>
     :<Link to={'/log'}>  <button className="btn bg-orange-500 font-bold">LOGIN</button></Link>
    }
    
    
   
-       <img className="rounded-lg" src="/car-doctor-resources/assets/icons/person.svg" alt="" />
+       
   </div>
    </div>
 </div>  
