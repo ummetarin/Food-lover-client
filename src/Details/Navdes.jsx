@@ -16,7 +16,7 @@ const Navdes = () => {
            </div>
           </div>
           <div>
-            <h1 className="font-extrabold mt-8 text-3xl text-orange-600">Details Page</h1>
+            <h1 className="font-extrabold mt-8 text-3xl text-orange-600">RESTAUENT || DETAILS Page</h1>
           </div>
         </div>
           

@@ -10,6 +10,5 @@ Currently, two official plugins are available:
 
 - [clientside](https://github.com/Porgramming-Hero-web-course/b8a11-client-side-ummetarin) [https://github.com/Porgramming-Hero-web-course/b8a11-client-side-ummetarin]
 - [Serverside](https://github.com/Porgramming-Hero-web-course/b8a11-server-side-ummetarin) [https://github.com/Porgramming-Hero-web-course/b8a11-server-side-ummetarin] 
-
 - [Livelink](https://github.com/Porgramming-Hero-web-course/b8a11-client-side-ummetarin) [https://github.com/Porgramming-Hero-web-course/b8a11-client-side-ummetarin] 
 

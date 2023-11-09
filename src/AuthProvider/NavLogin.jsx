@@ -15,7 +15,7 @@ const NavLogin = () => {
      </div>
     </div>
     <div>
-      <h1 className="font-extrabold mt-8 text-3xl text-orange-600">LOGIN PAGE</h1>
+      <h1 className="font-extrabold mt-8 text-3xl text-orange-600">RESTAURENT || LOGIN PAGE</h1>
     </div>
   </div>
     

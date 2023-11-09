@@ -42,7 +42,8 @@ const Nav = () => {
   </div>
   <div className="navbar-end lg:mr-36 md:mr-36 mr-52 md:mt-1 mt-7 gap-4 ">
    {
-    user?.email ? <button onClick={handllogout} className="btn bg-orange-500 font-bold">LogOut</button>:<Link to={'/log'}>  <button className="btn bg-orange-500 font-bold">LOGIN</button></Link>
+    user?.email ? <button onClick={handllogout} className="btn bg-orange-500 font-bold">LogOut</button> && <img src={user?.photoURL}></img>
+    :<Link to={'/log'}>  <button className="btn bg-orange-500 font-bold">LOGIN</button></Link>
    }
    
    

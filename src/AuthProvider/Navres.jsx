@@ -14,7 +14,7 @@ const Navres = () => {
      </div>
     </div>
     <div>
-      <h1 className="font-extrabold mt-8 text-3xl text-orange-600">REGISTER PAGE</h1>
+      <h1 className="font-extrabold mt-8 text-3xl text-orange-600">RESTAWRENT || REGISTER PAGE</h1>
     </div>
   </div>
     

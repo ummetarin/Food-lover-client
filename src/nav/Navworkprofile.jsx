@@ -16,7 +16,8 @@ const Navworkprofile = () => {
      </div>
     </div>
     <div>
-      <h1 className="font-extrabold mt-8 text-3xl text-orange-600">MY PROFILE</h1>
+      <h1 className="font-extrabold mt-8 text-3xl text-orange-600">
+       RESTAURENT || MY PROFILE</h1>
     </div>
   </div>
     
