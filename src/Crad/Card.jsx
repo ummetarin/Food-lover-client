@@ -9,7 +9,7 @@ const Card = () => {
   const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/topfood")
+    fetch("https://ass-11-server-side-tau.vercel.app/topfood")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);

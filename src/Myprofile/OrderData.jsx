@@ -13,7 +13,7 @@ const OrderData = () => {
 
   const [ord,setOrd]=useState([])
 
-   const url=`http://localhost:5000/orderdata?email=${user?.email}`;
+   const url=`https://ass-11-server-side-tau.vercel.app/orderdata?email=${user?.email}`;
    useEffect(()=>{
     fetch(url,{
       credentials:'include',
@@ -42,7 +42,7 @@ const OrderData = () => {
                 'Your file has been deleted.',
                 'success'
               )
-            fetch(`http://localhost:5000/orderdata/${_id}`,{
+            fetch(`https://ass-11-server-side-tau.vercel.app/orderdata/${_id}`,{
                 method:"DELETE"
       
             })
@@ -90,6 +90,7 @@ const OrderData = () => {
         <th>Food Name</th>
         <th>Food Image</th>
         <th>Price</th>
+        <th>Date</th>
         <th>Buyer</th>
         <th>Buyer Email</th>
         <th>Delete</th>
@@ -100,7 +101,7 @@ const OrderData = () => {
       
       {/* row 1 */}
       {
-        ord.map(da=><Table key={da.FoodID} setOrd={da} handledlt={handledlt}></Table>)
+        ord?.map(da=><Table key={da.FoodID} setOrd={da} handledlt={handledlt}></Table>)
       }
       
     {/* foot */}

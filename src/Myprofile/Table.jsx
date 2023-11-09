@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const Table = ({setOrd,handledlt}) => {
-    const {_id,Image,name,Price,Buyeremail,BuyerName,MadeBy,FoodName}=setOrd||{}
+    const {_id,Image,name,Price,Buyeremail,BuyerName,MadeBy,Date,FoodName}=setOrd||{}
     
 
 
@@ -34,6 +34,7 @@ const Table = ({setOrd,handledlt}) => {
         <td>{Price}</td>
         <td>{BuyerName}</td>
         <td>{Buyeremail}</td>
+        <td>{Date}</td>
         
         <th>
         <button onClick={()=>handledlt(_id)} className="btn btn-circle">

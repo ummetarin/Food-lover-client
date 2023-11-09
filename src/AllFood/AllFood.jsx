@@ -24,7 +24,7 @@ const AllFood = () => {
     console.log(pages);
 
     useEffect(()=>{
-      fetch(`http://localhost:5000/allresfood?pages=${currPage}&size=${itempage}`)
+      fetch(`https://ass-11-server-side-tau.vercel.app/allresfood?pages=${currPage}&size=${itempage}`)
       .then(res=>res.json())
       .then(data=>setServices(data))
     },[currPage,itempage])

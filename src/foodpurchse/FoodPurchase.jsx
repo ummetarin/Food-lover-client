@@ -58,7 +58,7 @@ const FoodPurchase = () => {
    
          // orderd post data
          return(
-           fetch("http://localhost:5000/orderdata", {
+           fetch("https://ass-11-server-side-tau.vercel.app/orderdata", {
            method: 'POST',
            headers: {
              'Content-Type': 'application/json',

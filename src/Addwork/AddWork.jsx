@@ -10,7 +10,7 @@ const AddWork = () => {
 
     const [data,setData]=useState([])
   
-     const url=`http://localhost:5000/adddata?email=${user?.email}`;
+     const url=`https://ass-11-server-side-tau.vercel.app/adddata?email=${user?.email}`;
      useEffect(()=>{
       fetch(url)
       .then(res=>res.json())

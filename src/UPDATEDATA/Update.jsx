@@ -34,7 +34,7 @@ const {_id, Quantity,Category,Image,description,Foodname,Price,quantity,Origin} 
          console.log(Order);
 
     
-     fetch(`http://localhost:5000/updateddata/${_id}`,{
+     fetch(`https://ass-11-server-side-tau.vercel.app/updateddata/${_id}`,{
          method:'PUT',
          headers:{
           'content-type':'application/json'

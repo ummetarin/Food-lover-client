@@ -44,13 +44,13 @@ const AuthProvider = ({children}) => {
           setLoading(false)
           if(currentUser){
             
-            axios.post("http://localhost:5000/jwt",logedUser,{ withCredentials :true})
+            axios.post("https://ass-11-server-side-tau.vercel.app/jwt",logedUser,{ withCredentials :true})
             .then(res=>{
               console.log("tokn",res.data);
             })
           }
           else{
-            axios.post("http://localhost:5000/logout",logedUser,{withCredentials:true})
+            axios.post("https://ass-11-server-side-tau.vercel.app/logout",logedUser,{withCredentials:true})
             .then(res=>{
               console.log(res.data);
             })

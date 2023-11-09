@@ -41,7 +41,7 @@ import Swal from "sweetalert2";
     // console.log(Order);
 
 
-    fetch('http://localhost:5000/adddata',{
+    fetch('https://ass-11-server-side-tau.vercel.app/adddata',{
       method:'POST',
       headers:{
        "content-type" :'application/json'

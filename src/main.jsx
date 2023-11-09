@@ -35,7 +35,7 @@ const router=createBrowserRouter([
     },{
       path:'/allfood',
       element:<AllFood></AllFood>,
-      loader:()=>fetch('http://localhost:5000/count')
+      loader:()=>fetch('https://ass-11-server-side-tau.vercel.app/count')
     },{
       path:'/res',
       element:<Resister></Resister>
@@ -48,7 +48,7 @@ const router=createBrowserRouter([
     },{
      path:"/allresfood/:id",
      element:<PrivateRepo><Details></Details></PrivateRepo>,
-     loader:({params})=>fetch(`http://localhost:5000/allresfood/${params.id}`)
+     loader:({params})=>fetch(`https://ass-11-server-side-tau.vercel.app/allresfood/${params.id}`)
     },{
       path:"/orpage",
       element:<PrivateRepo><OrderData></OrderData></PrivateRepo>,
@@ -62,14 +62,14 @@ const router=createBrowserRouter([
       {
         path:'/foodpurchase/:id',
         element:<FoodPurchase></FoodPurchase>,
-        loader:({params})=>fetch(`http://localhost:5000/allresfood/${params.id}`)
+        loader:({params})=>fetch(`https://ass-11-server-side-tau.vercel.app/allresfood/${params.id}`)
       },
 
     
     {
       path:"/update/:id",
       element:<PrivateRepo><Update></Update></PrivateRepo>,
-      loader:({params})=>fetch(`http://localhost:5000/adddata/${params?.id}`)
+      loader:({params})=>fetch(`https://ass-11-server-side-tau.vercel.app/adddata/${params?.id}`)
     }]
   },
 
