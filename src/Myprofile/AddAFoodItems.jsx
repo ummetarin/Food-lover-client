@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import Nav from "../nav/Nav";
 import Navworkprofile from "../nav/Navworkprofile";
+import Swal from "sweetalert2";
 
 
 
@@ -51,7 +52,13 @@ import Navworkprofile from "../nav/Navworkprofile";
     .then(data=>{
       console.log(data);
       if(data.insertedId){
-        alert('Added');
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'The Product is Added',
+          showConfirmButton: false,
+          timer: 1500
+        })
       }
     }
       )

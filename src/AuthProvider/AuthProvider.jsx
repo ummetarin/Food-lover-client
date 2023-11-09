@@ -4,6 +4,7 @@ import { createContext, useEffect, useState } from "react";
 
 import {  GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import app from "../firebase.config";
+import axios from "axios";
 
 export const AuthContext=createContext(null);
 const googleProvider=new GoogleAuthProvider();
@@ -13,9 +14,10 @@ const AuthProvider = ({children}) => {
     const [user,setUser]=useState(null)
     const[loading,setLoading]=useState(true)
   
-    const createUser=(email,password,name)=>{
+    const createUser=(email,password)=>{
+      
       setLoading(true)
-      return createUserWithEmailAndPassword(auth,email,password,name)
+      return createUserWithEmailAndPassword(auth,email,password)
     }
   
      const Googlesignin=()=>{
@@ -35,9 +37,24 @@ const AuthProvider = ({children}) => {
   
     useEffect(()=>{
    const unsub=onAuthStateChanged(auth,currentUser=>{
+        const userEmail=currentUser?.email||user?.email;
+         const logedUser={email:userEmail}
           setUser(currentUser);
-          // console.log(currentUser);
+          console.log(currentUser);
           setLoading(false)
+          if(currentUser){
+            
+            axios.post("http://localhost:5000/jwt",logedUser,{ withCredentials :true})
+            .then(res=>{
+              console.log("tokn",res.data);
+            })
+          }
+          else{
+            axios.post("http://localhost:5000/logout",logedUser,{withCredentials:true})
+            .then(res=>{
+              console.log(res.data);
+            })
+          }
           
       });
       return ()=>{

@@ -16,7 +16,7 @@ const NavWorkAll = () => {
            </div>
           </div>
           <div>
-            <h1 className="font-extrabold mt-8 text-3xl text-orange-600">RESTAURENT All FOOD ITEMS</h1>
+            <h1 className="font-extrabold mt-8 text-3xl text-orange-600">RESTAURENT || All FOOD ITEMS</h1>
           </div>
         </div>
           

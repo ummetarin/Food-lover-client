@@ -12,7 +12,7 @@ const Nav = () => {
   }
 
     return (
-        <div>
+        <div className='backdrop-blur-sm bg-white/30 '>
           <div>
      <div className="navbar bg-base-100 md:h-44 h-[600px] w-full shadow-lg font-bold md:flex-row flex-col ">
 
@@ -40,7 +40,7 @@ const Nav = () => {
 
   
   </div>
-  <div className="navbar-end lg:mr-36 md:mr-36 mr-52 md:mt-1 mt-3 gap-4 ">
+  <div className="navbar-end lg:mr-36 md:mr-36 mr-52 md:mt-1 mt-7 gap-4 ">
    {
     user?.email ? <button onClick={handllogout} className="btn bg-orange-500 font-bold">LogOut</button>:<Link to={'/log'}>  <button className="btn bg-orange-500 font-bold">LOGIN</button></Link>
    }

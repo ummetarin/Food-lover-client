@@ -3,7 +3,9 @@ import Nav from "../nav/Nav";
 import NavWorkAll from "../nav/NavWorkAll";
 import AllFoodData from "./AllFoodData";
 import { useLoaderData } from "react-router-dom";
+
 import Foood from "../Home/Foood";
+// import Foood from "../Home/Foood";
 
 const AllFood = () => {
 
@@ -32,8 +34,11 @@ const AllFood = () => {
 
             <NavWorkAll></NavWorkAll>
             <Nav></Nav>
-            <div className="mt-36 ">
-              <Foood></Foood>
+            <div className="mt-36 mb-24 ">
+              <Foood></Foood> 
+
+             
+
             </div>
 
           <div className="mt-4 mb-5 flex flex-col md:flex-row justify-center gap-8">
@@ -63,7 +68,7 @@ const AllFood = () => {
                 <p className="text-2xl font-bold mr-10 text-orange-950">Current Page is:{currPage}</p>
                
    {
-      pages.map(page=><button className="btn bg-red-600 text-white ml-3"     
+      pages.map(page=><button className=" h-16 w-16 bg-red-600 text-white ml-3"     
       onClick={()=>setCurrpage(page)}
       key={page.FoodID}>{page}</button>)
    }    

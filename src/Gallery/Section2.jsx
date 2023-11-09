@@ -4,7 +4,7 @@ import Gallery from "./Gallery";
 const Section2 = () => {
     return (
         <div className="" >
-              <div className="md:mb-6 mb-24">
+              <div className="md:mb-6 mb-24 md:mt-[600px]">
               <div className="flex md:flex-row flex-col justify-center  mt-12 ">
            <h1 className="text-5xl mt-12  text-center font-extrabold text-orange-600">Specialty of Our Restaurents</h1>
            <img className="flex md:mx-1 mx-auto" src="https://i.ibb.co/FXNMKD2/bb-removebg-preview.png" alt="" />

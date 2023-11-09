@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import {  useLoaderData } from "react-router-dom";
+import {  Link, useLoaderData } from "react-router-dom";
 import { AuthContext } from "../AuthProvider/AuthProvider";
 import Nav from "../nav/Nav";
 import Navdes from "./Navdes";
@@ -7,66 +7,13 @@ import Swal from "sweetalert2";
 
 const Details = () => {
     const data=useLoaderData();
+    console.log(
+      data
+    );
     const { user }=useContext(AuthContext);
-    console.log(user);
-    const OrderData={
-      Image:data.Image,
-      Price:data.Price,
-      name:data.FoodName,
-      MadeBy:data.MadeBy,
-      BuyerName:user?.name,
-      Origin:data.Origin,
-      FoodID:data.FoodID,
-      Email:user?.email,
-      Quantity:data.Quantity,
-    }
-   
+    
   
-    let [orderd, setOrder] = useState([])
-  
-    const handleaddcard=()=>{
-      if (data.Quantity <= 0) {
-       return(
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: 'This item is not available for purchase!',
-        })
-       )
-      } else if (user && user.email === data.Email) {
-       return(
-        Swal.fire({
-          icon: 'error',
-          title: 'Oops...',
-          text: "You can't purchase your own added food items!",
-        })
 
-       )
-      } else {
-        Swal.fire({
-          position: 'top-start',
-          icon: 'success',
-          title: 'The Product is Added',
-          showConfirmButton: false,
-          timer: 1500
-        })
-  
-        // orderd post data
-        return(
-          fetch("http://localhost:5000/orderdata", {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(OrderData),
-        })
-          .then((response) => response.json())
-          .then((data) => setOrder(data.message))
-      
-        )
-      }
-    };
-  // 
 
     return (
         <div>
@@ -94,9 +41,9 @@ const Details = () => {
             <div className="card-actions lg:justify-center md:justify-center justify-start font-bold ">
            
             <div>
-            <button  onClick={handleaddcard} className="Btn btn">
-                             Orderd
-           </button>
+            <Link to={`/foodpurchase/${data.FoodID}}`}><button className="Btn btn">
+                        Order Food </button></Link>
+           
   
            </div>
            

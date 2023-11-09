@@ -9,15 +9,18 @@ import Navworkprofile from "../nav/Navworkprofile";
 const OrderData = () => {
    
   const { user }=useContext(AuthContext)
+  console.log(user);
 
   const [ord,setOrd]=useState([])
 
    const url=`http://localhost:5000/orderdata?email=${user?.email}`;
    useEffect(()=>{
-    fetch(url)
+    fetch(url,{
+      credentials:'include',
+    })
     .then(res=>res.json())
     .then(data=>setOrd(data))
-   })
+   },[url])
   //  console.log(ord);
     
 
@@ -64,7 +67,7 @@ const OrderData = () => {
        }
       
      // set.map(da=><Carddlt key={da.Id} handledlt={handledlt} data={da}></Carddlt>)
-
+  console.log(ord);
     return (
       
         <div>
@@ -88,13 +91,13 @@ const OrderData = () => {
         <th>Food Image</th>
         <th>Price</th>
         <th>Buyer</th>
-        <th>Food Owner</th>
+        <th>Buyer Email</th>
         <th>Delete</th>
-        <th>Purchase</th>
+       
        
       </tr>
     </thead>
-    
+      
       {/* row 1 */}
       {
         ord.map(da=><Table key={da.FoodID} setOrd={da} handledlt={handledlt}></Table>)

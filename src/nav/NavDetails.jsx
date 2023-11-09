@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion';
 
-const Navwork = () => {
-  return (
-    <motion.div
+const NavDetails = () => {
+    return (
+        <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -26,12 +26,12 @@ const Navwork = () => {
         </div>
         <div>
           <h1 className="font-extrabold mt-8 md:ml-1 ml-56 md:mb-1 mb-4 text-3xl text-orange-600">
-            RESTAURANT
+            RESTAURANT || FOOD PURCHASE PAGE
           </h1>
         </div>
       </div>
     </motion.div>
-  );
+    );
 };
 
-export default Navwork;
+export default NavDetails;

@@ -80,38 +80,38 @@ const {_id, Quantity,Category,Image,description,Foodname,Price,quantity,Origin} 
 <div className="p-2 w-1/2">
 <div className="relative">
  <label htmlFor="text" className="leading-7 text-sm text-gray-600">Quantity</label>
- <input type="text" defaultValue={Quantity} name="quantity" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+ <input type="text" defaultValue={data.Quantity} name="quantity" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
 </div>
 </div>
 <div className="p-2 w-1/2">
 <div className="relative">
  <label htmlFor="text" className="leading-7 text-sm text-gray-600">FoodName</label>
- <input type="text" defaultValue={Foodname}  name="foodname" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+ <input type="text" defaultValue={data.Foodname}  name="foodname" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
 </div>
 </div>
 
 <div className="p-2 w-1/2">
 <div className="relative">
  <label htmlFor="text" className="leading-7 text-sm text-gray-600">Category</label>
- <input type="text" defaultValue={Category}   name="category" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+ <input type="text" defaultValue={data.Category}   name="category" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
 </div>
 </div>
 <div className="p-2 w-1/2">
 <div className="relative">
  <label htmlFor="text" className="leading-7 text-sm text-gray-600">Origin</label>
- <input type="text" defaultValue={Origin}  name="origin" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+ <input type="text" defaultValue={data.Origin}  name="origin" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
 </div>
 </div>
 <div className="p-2 w-1/2">
 <div className="relative">
  <label htmlFor="price" className="leading-7 text-sm text-gray-600">Price</label>
- <input type="text" defaultValue={Price} name="price" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+ <input type="text" defaultValue={data.Price} name="price" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
 </div>
 </div>
 <div className="p-2 w-full ">
 <div className="relative">
  <label htmlFor="price" className="leading-7 text-sm text-gray-600">Description</label>
- <input type="text" defaultValue={description} name="description"  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+ <input type="text" defaultValue={data.description} name="description"  className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
 </div>
 </div>
 <div className="p-2 w-full ">

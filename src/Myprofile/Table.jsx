@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 
 const Table = ({setOrd,handledlt}) => {
-    const {_id,Image,name,Price,Email,MadeBy}=setOrd||{}
+    const {_id,Image,name,Price,Buyeremail,BuyerName,MadeBy,FoodName}=setOrd||{}
     
 
 
@@ -18,7 +18,7 @@ const Table = ({setOrd,handledlt}) => {
           </label>
         </th>
         <td>
-          {name}
+          {FoodName}
         </td>
 
         <td>
@@ -32,16 +32,15 @@ const Table = ({setOrd,handledlt}) => {
         </td>
        
         <td>{Price}</td>
-        <td>{Email}</td>
-        <td>{MadeBy}</td>
+        <td>{BuyerName}</td>
+        <td>{Buyeremail}</td>
+        
         <th>
         <button onClick={()=>handledlt(_id)} className="btn btn-circle">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6  text-red" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
          </button>
         </th>
-        <th>
-        <Link to={'/myparchasedata'}><button  className="custom-btn btn-2">Purchase</button></Link>
-        </th>
+       
       </tr>
       </tbody>
      

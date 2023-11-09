@@ -17,6 +17,8 @@ import AddAFoodItems from './Myprofile/AddAFoodItems'
 import AddWork from './Addwork/AddWork'
 import Update from './UPDATEDATA/Update'
 import PrivateRepo from './AuthProvider/PrivateRepo'
+import FoodPurchase from './foodpurchse/FoodPurchase'
+
 
 
 const router=createBrowserRouter([
@@ -45,20 +47,28 @@ const router=createBrowserRouter([
       element:<MyProf></MyProf>,
     },{
      path:"/allresfood/:id",
-     element:<Details></Details>,
+     element:<PrivateRepo><Details></Details></PrivateRepo>,
      loader:({params})=>fetch(`http://localhost:5000/allresfood/${params.id}`)
     },{
       path:"/orpage",
       element:<PrivateRepo><OrderData></OrderData></PrivateRepo>,
     },{
       path:"/addele",
-      element:<AddAFoodItems></AddAFoodItems>
+      element:<PrivateRepo><AddAFoodItems></AddAFoodItems></PrivateRepo>
     },{
       path:"/seeadddata",
-      element:<AddWork></AddWork>
-    },{
+      element:<PrivateRepo><AddWork></AddWork></PrivateRepo>
+    },
+      {
+        path:'/foodpurchase/:id',
+        element:<FoodPurchase></FoodPurchase>,
+        loader:({params})=>fetch(`http://localhost:5000/allresfood/${params.id}`)
+      },
+
+    
+    {
       path:"/update/:id",
-      element:<Update></Update>,
+      element:<PrivateRepo><Update></Update></PrivateRepo>,
       loader:({params})=>fetch(`http://localhost:5000/adddata/${params?.id}`)
     }]
   },

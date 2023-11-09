@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { motion } from "framer-motion"; // Import the motion component
 import CardDta from "./CardDta";
+import { Link } from "react-router-dom";
 
 const Card = () => {
   const [services, setServices] = useState([]);
@@ -16,6 +17,23 @@ const Card = () => {
   const toggleShowAll = () => {
     setShowAll(!showAll);
   };
+
+   const handleBookFood = (foodId) => {
+    const updatedServices = services.map((service) => {
+      if (service.FoodID === foodId) {
+        return {
+          ...service,
+          count: service.count + 1, // Increment the count for the selected food
+        };
+      }
+      return service;
+    });
+    setServices(updatedServices);
+  };
+
+  const topSellingServices = services.slice().sort((a, b) => b.count - a.count);
+  const topSellingProduct = topSellingServices[0];
+
 
   return (
     <div>
@@ -54,10 +72,19 @@ const Card = () => {
             className="bg-orange-600 text-white px-4 py-2 rounded-md"
             onClick={toggleShowAll}
           >
-            See More
+          <Link to={'/allfood'}>See More</Link>
           </motion.button>
         </div>
       ) : null}
+
+<div className="text-center mt-4">
+  {topSellingProduct ? (
+    <p>Top Selling Food: {topSellingProduct.name}</p>
+  ) : (
+    <p>No top-selling food available</p>
+  )}
+</div>
+
     </div>
   );
 };
